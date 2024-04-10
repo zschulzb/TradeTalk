@@ -8,8 +8,12 @@ app = Flask(__name__) #instantiate a flask app object
 #   all routing blocks use @app
 
 @app.route('/')
-def index():
+def landpage():
     return render_template("home.html")
+
+@app.route("/Sign In")
+def signin():
+    return render_template("signin.html")
 
 #done routing blocks
 
