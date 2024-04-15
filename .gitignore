@@ -1,0 +1,6 @@
+#ignore testing python scripts
+flask_ex2.py
+flask_ex3.py
+
+#ignore virtual environments
+.venv/
