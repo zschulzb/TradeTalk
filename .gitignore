@@ -4,3 +4,10 @@ flask_ex3.py
 
 #ignore virtual environments
 .venv/
+
+#ignore CSS files
+GPT-BASE.css 
+flow.css
+
+#ignore HTML files
+_cp_home.html
