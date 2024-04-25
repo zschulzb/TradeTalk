@@ -46,17 +46,15 @@ body {
     width: 100px;
     height: 25px;
 }
-
 #infoButton {
     position: fixed;
     top: 20px;
     width: 100px;
     height: 25px;
 }
-
 #faqButton {
     position: fixed;
-    right: 300px;A
+    right: 300px;
     top: 20px;
     width: 100px;
     height: 25px;
