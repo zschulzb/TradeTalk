@@ -11,9 +11,14 @@ app = Flask(__name__) #instantiate a flask app object
 def landpage():
     return render_template("home.html")
 
-@app.route("/Sign In")
+@app.route("/Sign_In")
 def signin():
     return render_template("signin.html")
+
+@app.route("/About_Us")
+def aboutus():
+    return render_template("aboutus.html")
+
 
 #done routing blocks
 
