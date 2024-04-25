@@ -7,7 +7,7 @@ body {
 }
 .container {
     max-width: 960px;
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     padding: 50px 20px;
 }
 .header {
@@ -32,9 +32,32 @@ body {
     color: #fff;
     padding: 10px 0;
 }
-
 #signInButton {
     position: fixed;
-    right: 150px;
-    top: 100px;
+    right: 30px;
+    top: 10px;
+    width: 100px; /* adjust the width as needed */
+    height: 50px; /* adjust the height as needed */
+}
+#aboutUsButton {
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    width: 100px;
+    height: 25px;
+}
+
+#infoButton {
+    position: fixed;
+    top: 20px;
+    width: 100px;
+    height: 25px;
+}
+
+#faqButton {
+    position: fixed;
+    right: 300px;A
+    top: 20px;
+    width: 100px;
+    height: 25px;
 }
