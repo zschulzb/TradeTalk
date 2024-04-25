@@ -19,6 +19,10 @@ def signin():
 def aboutus():
     return render_template("aboutus.html")
 
+@app.route("/Info")
+def info():
+    return render_template("info.html")
+
 
 #done routing blocks
 
