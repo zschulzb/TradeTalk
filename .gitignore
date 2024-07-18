@@ -9,5 +9,5 @@ flask_ex3.py
 GPT-BASE.css 
 flow.css
 
-#ignore HTML files
-_cp_home.html
+#ignore pycache
+__pycache__/*
