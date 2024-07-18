@@ -7,3 +7,4 @@ flow.css
 
 #ignore pycache
 __pycache__/*
+app/__pycache__/*
