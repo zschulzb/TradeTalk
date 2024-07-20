@@ -8,3 +8,6 @@ flow.css
 #ignore pycache
 __pycache__/*
 app/__pycache__/*
+
+#Base HTML tempalte
+app/template/_baseTemplate.html
