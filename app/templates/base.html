@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {%if user.username%}
+        <title>Welcome {{ user.username }} to Trade Talk</title>
+        {% else %}
+        <title>Welcome to Trade Talk</title>
+        {% endif %}   
+        <link rel="stylesheet" href="static/base.css"> <!--Link CSS file-->
+    </head>
+        <body>
+            <div class=""container>
+                <header class="header">
+                    {% if user.username %}
+                    <h1>Welcome to Trade Talk, {{ user.username }}!</h1> 
+                    {% else %}
+                    <h1>Welcome to Trade Talk!</h1> 
+                    {% endif %}
+                    <form action="/Home_Page"> 
+                        <input type="submit" value="Home" id="homeButton">
+                    </form>
+                    <form action="/Sign_In">  <!-- Sign In button-->
+                        <input type="submit" value="Sign In" id="signInButton">
+                    </form> 
+                    <form action="About_Us">  <!-- About Us button-->
+                        <input type="submit" value="About Us" id="aboutUsButton">
+                    </form>
+                    <form action="/FAQ">  <!-- Information In button-->
+                        <input type="submit" value="FAQ" id="faqButton">
+                    </form> 
+                </header>
+                <hr>
+                    {% block content %}{% endblock %}
+                <footer class="footer">
+                    <p>&copy; 2024 TradeTalk. All rights reserved.</p>
+                </footer>
+            </div>
+        </body>
+        </title>
+    </head>
+</html>
