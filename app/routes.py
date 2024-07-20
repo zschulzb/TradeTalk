@@ -26,15 +26,25 @@ def userpage():
             'body': 'Best handyman experience!'
         }
     ]
-    return render_template("home.html", user=user, post=post)
+    return render_template("userpage.html", user=user, post=post)
 
 @app.route("/Sign_In")
 def signin():
-    return render_template("signin.html")
+    user = {'username':'Zach'}
+    post = [
+        {},
+        {}
+    ]
+    return render_template("signin.html", user=user, post=post)
 
 @app.route("/About_Us")
 def aboutus():
-    return render_template("aboutus.html")
+    user = {'username':'Zach'}
+    post = [
+        {},
+        {}
+    ]
+    return render_template("aboutus.html", user=user, post=post)
 
 #end block routes
 
