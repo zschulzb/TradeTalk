@@ -41,7 +41,7 @@ def signin():
 
 @app.route("/About_Us")
 def aboutus():
-    user = {'username':'Zach'}
+    user = {}
     post = [
         {},
         {}
