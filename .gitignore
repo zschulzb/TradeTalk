@@ -1,5 +1,6 @@
-#ignore virtual environments
+#ignoru virtual environments
 .venv/*
+.flaskenv
 
 #ignore CSS files
 GPT-BASE.css 
