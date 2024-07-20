@@ -10,5 +10,5 @@ __pycache__/*
 app/__pycache__/*
 
 #Base HTML tempalte
-app/template/_baseTemplate.html
+app/templates/_baseTemplate.html
 app/static/home.css
