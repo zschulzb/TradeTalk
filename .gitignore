@@ -11,3 +11,4 @@ app/__pycache__/*
 
 #Base HTML tempalte
 app/template/_baseTemplate.html
+app/static/home.css
