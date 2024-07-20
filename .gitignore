@@ -1,5 +1,6 @@
-#ignoru virtual environments
+#ignore environments
 .venv/*
+requirements.txt
 .flaskenv
 .github/*
 
