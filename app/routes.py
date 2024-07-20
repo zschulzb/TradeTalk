@@ -2,8 +2,31 @@ from flask import render_template
 from app import app
 
 @app.route('/')
-def landpage():
-    return render_template("home.html")
+
+@app.route('/')
+@app.route('/index')
+def index():
+    user = {'username':'Zach'}
+    post = [
+        {},
+        {}
+    ]
+    return render_template('index.html', user=user, post=post)
+
+@app.route('/Home_Page')
+def userpage():
+    user = {'username':'Zach'}
+    post = [
+        {
+            'author': {'username': 'Andrew'},
+            'body': 'Beautiful Craftsmanship!'
+        },
+        {
+            'author': {'username': 'Munish'},
+            'body': 'Best handyman experience!'
+        }
+    ]
+    return render_template("home.html", user=user, post=post)
 
 @app.route("/Sign_In")
 def signin():
@@ -13,12 +36,7 @@ def signin():
 def aboutus():
     return render_template("aboutus.html")
 
-@app.route("/Info")
-def info():
-    return render_template("info.html")
-
-
-#done routing blocks
+#end block routes
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=True)
