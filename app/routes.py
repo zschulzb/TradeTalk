@@ -1,6 +1,8 @@
 from flask import render_template
 from app import app
 
+LOGGED_IN = False
+
 @app.route('/')
 
 @app.route('/')
