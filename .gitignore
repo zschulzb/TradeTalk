@@ -1,6 +1,5 @@
 #ignore environments
 .venv/*
-requirements.txt
 .flaskenv
 .github/*
 
