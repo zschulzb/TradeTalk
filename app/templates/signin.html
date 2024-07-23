@@ -2,16 +2,26 @@
 
 {% block content %}
     <title>Sign In Page</title>
-    <body>
-        <!-- <link rel="stylesheet" href="static/signin.css"> Link CSS file -->
-        <form action="/login" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br><br>
-            <input type="checkbox" id="remember" name="remember">
-            <label for="remember">Remember me</label><br><br>
-            <button type="submit">Login</button>
-        </form>
-    </body>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label}}<br>
+            {{ form.username(size=32) }}
+        </p>
+        <p>
+            {{ form.password.label}}<br>
+            {{ form.password(size=32) }}
+        </p>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <p>{{ form.submit() }}</p>
+
+<!--         
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Remember me</label><br><br>
+        <button type="submit">Login</button> -->
+    </form>
 {% endblock %}
