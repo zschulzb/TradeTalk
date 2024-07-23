@@ -1,5 +1,6 @@
 from flask import render_template
 from app import app
+from app.forms import LoginForm
 
 LOGGED_IN = False
 
@@ -32,12 +33,10 @@ def userpage():
 
 @app.route("/Sign_In")
 def signin():
-    user = {'username':'Zach'}
-    post = [
-        {},
-        {}
-    ]
-    return render_template("signin.html", user=user, post=post)
+    form = LoginForm()
+    user = {}
+    post = [{},{}]
+    return render_template("signin.html", user=user, post=post, form=form)
 
 @app.route("/About_Us")
 def aboutus():
