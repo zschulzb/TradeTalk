@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, flash, redirect, url_for
 from app import app
 from app.forms import LoginForm
 
@@ -30,11 +30,15 @@ def userpage():
     ]
     return render_template("userpage.html", user=user, post=post)
 
-@app.route("/Sign_In")
+@app.route("/Sign_In", methods=['GET', 'POST'])
 def signin():
     form = LoginForm()
     user = {}
     post = [{},{}]
+    if form.validate_on_submit():
+        flash('Login requested for user {}, remember_me={})'.format(
+            form.username.data, form.remember_me.data))
+        return redirect('/index')
     return render_template("signin.html", user=user, post=post, form=form)
 
 @app.route("/About_Us")
