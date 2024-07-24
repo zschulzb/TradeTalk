@@ -4,7 +4,6 @@ from app.forms import LoginForm
 
 LOGGED_IN = False
 
-@app.route('/')
 
 @app.route('/')
 @app.route('/index')
